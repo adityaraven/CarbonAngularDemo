@@ -1,5 +1,6 @@
 # CarbonAngular
 
+This project is for understanding carbon design system working before inplementing it on the main project deployment.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
 
 ## Development server
