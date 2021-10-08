@@ -1,0 +1,16 @@
+
+
+<ibm-modal size="sm" [open]="true" (overlaySelected)="ClosePrompt()">
+    <ibm-modal-header (closeSelect)="ClosePrompt()" [showCloseButton]="false">
+        <h2 ibmModalHeaderLabel>L&K Widget</h2>
+        <h3 ibmModalHeaderHeading></h3>
+    </ibm-modal-header>
+    <section ibmModalContent>
+        <h1>Delete this item</h1>
+        <p ibmModalContentText>{{modalText}}</p>
+    </section>
+    <ibm-modal-footer>
+        <button class="bx--btn bx--btn--secondary" type="close" (click)="ClosePrompt()">Cancel</button>
+        <button class="bx--btn bx--btn--primary" modal-primary-focus (click)="DeleteAndClosePrompt()">Delete</button>
+    </ibm-modal-footer>
+</ibm-modal>

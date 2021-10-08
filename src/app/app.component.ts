@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { TableHeaderItem } from 'carbon-components-angular';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'carbon-angular';
+
+  constructor() { }
+
+  ngOnInit() {
+	}
+
+  //class FilterableHeaderItem extends TableHeaderItem 
 }

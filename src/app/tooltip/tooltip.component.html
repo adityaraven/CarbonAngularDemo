@@ -1,0 +1,36 @@
+
+<!-- 
+<div>
+    <div class="bx--tooltip__label">
+        {{triggerText}}
+        <span
+            ibmTooltip="Hello, World"
+            [offset]= "{x:0,y:0}"
+            [isOpen]="false"
+            trigger="hover"
+            placement="bottom">
+            <div role="button">
+                <svg ibmIcon="information--filled" size="16"></svg>
+            </div>
+        </span>
+    </div>
+    <ibm-placeholder></ibm-placeholder>
+</div> -->
+
+<!-- <div>
+<ibm-tooltip-icon
+    [placement]="'right'"
+    [alignment]="'start'"
+    [content]="stringContentTooltip"
+  >
+    <svg ibmIcon="information--filled" size="16"></svg>
+</ibm-tooltip-icon>
+</div> -->
+
+
+<ibm-tooltip-definition
+	[content]="content"
+	[placement]="'bottom'"
+	[alignment]="'start'">
+    Hover over me
+</ibm-tooltip-definition>

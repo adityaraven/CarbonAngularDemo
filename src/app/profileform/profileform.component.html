@@ -1,0 +1,72 @@
+
+<div ibmRow class="sub-heading">
+    <div ibmCol [columnNumbers]="{'lg': 8, 'md': 8, 'sm': 8}">
+        <h4>L&K Widget App</h4>
+    </div>
+</div>
+
+<div ibmRow>
+    <div ibmCol [columnNumbers]="{'lg': 6, 'md': 6, 'sm': 6}">
+        <ng-container>
+            <form [formGroup]="profileform" (ngSubmit)="onSubmit()">
+                <div ibmGrid>
+                    <div ibmRow style="margin-bottom: 10px;">
+                        <h4>Online Regstration form</h4>
+                    </div>
+                    <div ibmRow class="form-item" >
+                        <ibm-label >
+                            Full Name
+                            <input
+                                ibmText
+                                [autocomplete]="false"
+                                formControlName="fullname"
+                                [(ngModel)]="profileform.fullname">
+                        </ibm-label>
+                    </div>
+                    <div ibmRow class="form-item" >
+                        <ibm-label>
+                            Department
+                            <input
+                                ibmText
+                                [autocomplete]="false"
+                                formControlName="department">
+                        </ibm-label>
+                    </div>
+                    <div ibmRow class="form-item" >
+                        <ibm-label>
+                            Designation
+                            <input
+                                ibmText
+                                [autocomplete]="false"
+                                formControlName="designation">
+                        </ibm-label>
+                    </div>
+                    <div ibmRow class="form-item" >
+                        <ibm-label>
+                            Phone Number
+                            <input
+                                ibmText
+                                [autocomplete]="false"
+                                formControlName="phoneNo">
+                        </ibm-label>
+                    </div>
+                    <div ibmRow class="form-item" >
+                        <ibm-label>
+                            Address
+                            <textarea
+                                ibmTextArea
+                                placeholder="Enter your full address here"
+                                formControlName="address"
+                                [rows]="3"
+                                aria-label="textarea"></textarea>
+                        </ibm-label>
+                    </div>
+                    <div ibmRow class="form-item">
+                        <button ibmButton="primary" type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </ng-container>
+        
+    </div>
+</div>
