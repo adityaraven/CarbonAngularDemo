@@ -16,7 +16,7 @@ import {
   UIShellModule,
   NotificationModule,
   DialogModule,
-  TagModule
+  TagModule,
 } from 'carbon-components-angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -61,7 +61,6 @@ import { CloudstorageComponent } from './cloudstorage/cloudstorage.component';
     DialogModule,
     TagModule
     // ModalService,
-
     ],
   providers: [],
   bootstrap: [AppComponent]

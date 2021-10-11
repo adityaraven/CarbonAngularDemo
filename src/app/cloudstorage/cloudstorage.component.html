@@ -1,1 +1,18 @@
-<p>cloudstorage works!</p>
+<ibm-file-uploader
+			title="Add attachments"
+			description="all formats supported"
+			buttonText="Add attachments"
+			buttonType="primary"
+			[accept]="[]"
+			[multiple]="true"
+			[skeleton]="false"
+			[(files)]="files"
+			size="normal"
+			[disabled]="false">
+</ibm-file-uploader>
+
+<div id="notificationId" style="width: 300px; margin-top: 20px"></div>
+
+<button ibmButton="primary" *ngIf="files && files.size > 0" (click)="onUpload()">Upload
+    <svg class="bx--btn__icon" ibmIcon="attachment" size="16"></svg>
+</button>
